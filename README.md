@@ -16,7 +16,6 @@ Build a complete real estate analytics solution using Python for advanced data c
 | Pandas | Data manipulation — filtering, grouping, imputation, derived columns |
 | NumPy | Numerical operations — outlier capping, median calculation |
 | MySQL | Data warehousing — stores cleaned 100K row dataset in structured schema |
-| SQLAlchemy | Python-to-MySQL ORM connectivity — abstracts raw SQL for loading |
 | Power BI Desktop | Interactive dashboards — 10 visuals with slicers, drill-through, DAX |
 
 ## Project Structure

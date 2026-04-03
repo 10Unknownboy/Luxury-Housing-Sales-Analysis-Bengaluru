@@ -4,6 +4,10 @@ Bengaluru Real Estate Analytics Pipeline
 
 100,000+ Records | Python + MySQL + Power BI
 
+## Problem Statement:
+
+Build a complete real estate analytics solution using Python for advanced data cleaning, load the refined dataset into a SQL database, and use Power BI to directly connect to SQL and build a dashboard. The goal is to replicate a real-world enterprise-level data pipeline and analysis environment using a complex housing dataset with 1,00,000+ records.
+
 ## Tech Stack
 
 | Tool | Purpose |
@@ -113,7 +117,7 @@ The raw Luxury_Housing_Bangalore.csv contains unclean data with currency symbols
 Python script using Pandas and NumPy transforms the raw file into a clean, analysis-ready dataset. All feature engineering happens here — Price_per_Sqft, Quarter_Label, Quarter_Number, and Booking_Flag are all derived in this stage.
 
 **Stage 3 — load_to_sql.py**
-SQLAlchemy connects Python to the MySQL instance and bulk-inserts the cleaned DataFrame into luxury_housing_db.luxury_housing. The schema is defined in sql_scripts/schema.sql.
+mysql.connector connects Python to the MySQL instance and bulk-inserts the cleaned DataFrame into luxury_housing_db.luxury_housing. The schema is defined in sql_scripts/schema.sql.
 
 **Stage 4 — Power BI**
 Power BI Desktop connects directly to MySQL. All DAX measures, calculated columns, and new tables for aggregation are defined inside Power BI — no further Python processing is needed at this stage.
